@@ -783,6 +783,7 @@ def run_finalize_scripts(context: Context) -> None:
         MKOSI_UID=str(INVOKING_USER.uid),
         MKOSI_GID=str(INVOKING_USER.gid),
         MKOSI_CONFIG="/work/config.json",
+        MKOSI_IMAGENAME=str(context.config.output_with_format),
         **GIT_ENV,
     )
 
